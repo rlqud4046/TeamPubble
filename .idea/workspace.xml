@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="Add domains, repositories and services &#10;&#10;It provides save functions." />
+    <list id="4e5348a5-e72a-4b7d-a736-571b4c6f759b" name="Revert &quot;initial commit&quot;" comment="Revert &quot;initial commit&quot;&#10;&#10;This reverts commit 8a7f0e2a">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/ConpubApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Delivery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Faq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Mileage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OptionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OrderStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Reply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SiteImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/YesNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/BoardRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/CartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/DeliveryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/FaqRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MileageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OptionListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ReplyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/SelectedOptionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/SiteImageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/DeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/FaqService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MileageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OptionListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ReplyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/SelectedOptionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/SiteImageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pubble/conpub/ConpubApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="conpub" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="conpub" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="test1" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="ProjectId" id="1d9PWzRW6RYUdOCGzYJPjNll0SH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\NCS\workspace(boot)\conpub\build\resources\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ConpubApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="conpub.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pubble.conpub.ConpubApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="" />
+      <created>1591834379467</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591834379467</updated>
+      <workItem from="1591834407026" duration="15709000" />
+      <workItem from="1591920807877" duration="21683000" />
+      <workItem from="1592179798509" duration="13950000" />
+      <workItem from="1592199117743" duration="9584000" />
+      <workItem from="1592210472408" duration="527000" />
+      <workItem from="1592266416302" duration="211000" />
+      <workItem from="1592266717969" duration="2582000" />
+    </task>
+    <task id="LOCAL-00001" summary="comm">
+      <created>1591863399057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591863399057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commtest">
+      <created>1591925777010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591925777010</updated>
+    </task>
+    <task id="LOCAL-00003" summary="이건가!">
+      <created>1591929045022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591929045022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ㅎㅎㅎ">
+      <created>1591929271923</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591929271923</updated>
+    </task>
+    <task id="LOCAL-00005" summary="샌드위치 맛있겠당">
+      <created>1591929757485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591929757485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="샌드위치 맛있겠당">
+      <created>1591929977417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591929977417</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2020.06.15">
+      <created>1592181562947</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592181562947</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2020.06.15-2">
+      <created>1592183366237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592183366237</updated>
+    </task>
+    <task id="LOCAL-00009" summary="2020.06.15-2">
+      <created>1592186290723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592186290723</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2020.06.15 Domains">
+      <created>1592186685124</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592186685124</updated>
+    </task>
+    <task id="LOCAL-00011" summary="2020.06.15 Domains">
+      <created>1592186696864</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592186696864</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add domains, repositories and services &#10;&#10;It provides save functions.">
+      <created>1592267468566</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592267468566</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="test1" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="comm" />
+    <MESSAGE value="commtest" />
+    <MESSAGE value="이건가!" />
+    <MESSAGE value="ㅎㅎㅎ" />
+    <MESSAGE value="샌드위치 맛있겠당" />
+    <MESSAGE value="2020.06.15" />
+    <MESSAGE value="2020.06.15-2" />
+    <MESSAGE value="2020.06.15 Domains" />
+    <MESSAGE value="Add domains, repositories and services &#10;&#10;It provides save functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add domains, repositories and services &#10;&#10;It provides save functions." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="857" y="409" key="#Assign_Data_Sources" timestamp="1591941971700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="857" y="409" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1591941971700" />
+    <state x="552" y="178" width="1115" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592201093645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="1115" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592201093645" />
+    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591928982562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591928982562" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1591940298243">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591940298243" />
+    <state x="660" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591944630748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591944630748" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591944589778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591944589778" />
+    <state x="550" y="74" key="CommitChangelistDialog2" timestamp="1592268991945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="550" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592268991945" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1592192265785">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192265785" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592268362137">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592268362137" />
+    <state x="751" y="386" key="Github.CreatePullRequestDialog" timestamp="1591933082900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="386" key="Github.CreatePullRequestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591933082900" />
+    <state x="838" y="417" key="Github.ShareDialog" timestamp="1592210915330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592210915330" />
+    <state x="700" y="221" key="Github.UntrackedFilesDialog" timestamp="1591863010431">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="221" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591863010431" />
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1592198991905">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592198991905" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1592198991905">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592198991905" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1592198991905">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592198991905" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1592198991905">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592198991905" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1591929641310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591929641310" />
+    <state x="848" y="386" key="MultipleFileMergeDialog" timestamp="1591929641326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="848" y="386" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591929641326" />
+    <state x="697" y="222" key="RollbackChangesDialog" timestamp="1592192390801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192390801" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1592189117799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592189117799" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1591922270997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591922270997" />
+    <state x="707" y="207" key="VCS.ChangeListViewerDialog" timestamp="1592266837516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="207" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592266837516" />
+    <state x="790" y="389" key="VCS.EditChangelistDialog" timestamp="1591926480820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="389" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591926480820" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592267512323">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592267512323" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592268363849">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592268363849" />
+    <state x="668" y="74" width="584" height="891" key="find.popup" timestamp="1592266926620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="74" width="584" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592266926620" />
+    <state x="742" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592192392754">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192392754" />
+    <state x="758" y="307" key="git4idea.merge.GitMergeDialog" timestamp="1591927219682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="758" y="307" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591927219682" />
+    <state x="682" y="307" key="git4idea.merge.GitPullDialog" timestamp="1592192256182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192256182" />
+    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592266526648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592266526648" />
+    <state x="773" y="414" key="git4idea.ui.GitResetDialog" timestamp="1592268022234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592268022234" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592269209698">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592269209698" />
+  </component>
+</project>
