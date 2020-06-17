@@ -6,7 +6,7 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         # JPA에서 발생하는 쿼리문을 콘솔창에 출력해줌.
@@ -14,6 +14,11 @@ spring:
         # SQL문장이 한줄에 나오는 것이 아니라 예쁘게나옴.
         format_sql: true
         globally_quoted_identifiers: true
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
 
   thymeleaf:
     cache: false
