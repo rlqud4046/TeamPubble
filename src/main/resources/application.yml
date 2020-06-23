@@ -6,7 +6,7 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     properties:
       hibernate:
         # JPA에서 발생하는 쿼리문을 콘솔창에 출력해줌.
@@ -23,6 +23,15 @@ spring:
   thymeleaf:
     cache: false
     #서버 재시작 안하고 쓸 수 있음.
+
+  mail:
+    host: smtp.naver.com
+    port: 465
+    username: minwtest1
+    password: minwtest1!@
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
 
 logging.level:
   #JPA에서 발생하는 쿼리문을 로그파일로 보여주는 옵션

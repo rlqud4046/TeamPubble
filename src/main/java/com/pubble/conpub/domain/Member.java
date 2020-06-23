@@ -64,6 +64,20 @@ public class Member {
     @OneToMany(mappedBy = "selectOptionMember")
     private List<SelectedOption> selectedOptions = new ArrayList<SelectedOption>();
 
+    @OneToMany(mappedBy = "emailMember")
+    private List<Email> emails = new ArrayList<Email>();
+
+    @OneToMany(mappedBy = "smsMember")
+    private List<SMS> sms = new ArrayList<SMS>();
+
+
+
+
+
+
+
+    /*@Enumerated(EnumType.STRING)
+    private YesNo memberBlack;*/
 
 
 

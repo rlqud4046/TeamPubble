@@ -7,5 +7,5 @@
 
 </head>
 <body>
-<a href="/member_list">관리자 페이지로</a>
+<a href="/member/list">관리자 페이지로</a>
 </body>

@@ -62,7 +62,7 @@ public class SelectedOption {
 
     private int amount;
 
-    @Column(nullable = false, precision = 12, scale = 1)
+    @Column(precision = 12, scale = 1)
     private BigDecimal total_price;
 
     private String ALIAS;
