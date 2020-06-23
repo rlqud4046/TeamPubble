@@ -29,8 +29,7 @@ public class Item {
 
     private String itemName;
 
-    @Column(nullable = false, precision = 12, scale = 1)
-    private BigDecimal itemBasePrice;
+    private int itemBasePrice;
 
     private String itemImage1;
 
@@ -44,42 +43,17 @@ public class Item {
 
     private String itemDelivery;
 
+
     @OneToMany(mappedBy = "item")
     private List<SelectedOption> selectedOptions = new ArrayList<>();
 
+
+    //리뷰
     @OneToMany(mappedBy = "reviewItem")
     private List<Review> reviews = new ArrayList<Review>();
 
-    private int sizeCheck;
+    @ManyToMany(mappedBy = "items")
+    private List<OptionList> optionLists;
 
-    private int paperCheck;
-
-    private int pageCheck;
-
-    private int bindingCheck;
-
-    private int bindingDirectionCheck;
-
-    private int coverColorCheck;
-
-    private int coverSideCheck;
-
-    private int coverTypeCheck;
-
-    private int coverCoatingCheck;
-
-    private int textColorCheck;
-
-    private int textBothSidesCheck;
-
-    private int annalsCoverColorCheck;
-
-    private int hardGoldCheck;
-
-    private int signaturePageCheck;
-
-    private int amount;
 
 }
-
-

@@ -1,0 +1,7 @@
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (1, 30, '', '', '', '', '', '포트폴리오', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (2, 20, '', '', '', '', '', '독립출판', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (3, 40, '', '', '', '', '', '앨범', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (4, 50, '', '', '', '', '', '학위논문', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (5, 30, '', '', '', '', '', '팜플렛', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (6, 40, '', '', '', '', '', '카탈로그', '');
+INSERT INTO PUBLIC."item" ("item_no", "item_base_price", "item_delivery", "item_image1", "item_image2", "item_image3", "item_info", "item_name", "item_recommend") VALUES (7, 30, '', '', '', '', '', '포스터', '');

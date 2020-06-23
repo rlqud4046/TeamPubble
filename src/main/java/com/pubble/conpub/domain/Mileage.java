@@ -30,7 +30,7 @@ public class Mileage {
     @JoinColumn(name = "member_no")
     private Member mileageMember;
 
-    private BigDecimal mileage;
+    private int mileage;
 
     private String mileagePath;
 
