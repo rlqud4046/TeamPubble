@@ -32,8 +32,8 @@ public class OptionList {
 
     private String optionDetail;
 
-    @Column(precision = 12, scale = 1)
-    private BigDecimal optionPrice;
+
+    private int optionPrice;
 
 
 

@@ -29,8 +29,7 @@ public class Item {
 
     private String itemName;
 
-    @Column(precision = 12, scale = 1)
-    private BigDecimal itemBasePrice;
+    private int itemBasePrice;
 
     private String itemImage1;
 
