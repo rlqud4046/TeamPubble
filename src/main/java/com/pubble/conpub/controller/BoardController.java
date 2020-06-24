@@ -16,10 +16,10 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @RequestMapping("/")
+    /*@RequestMapping("/")
     public String a(){
         return "index";
-    }
+    }*/
 
     @GetMapping("/board/write")
     public String boardWrite(Model model){
