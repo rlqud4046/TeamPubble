@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,14 +27,35 @@
 		<header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="nav-item" >
-					<a class="nav-link active" href="#">로그인</a>
-				</li>
+				<c:choose>
+					<c:when test="${!empty sessionScope.member.memberId}">
+						<li class="nav-item" >
+							<a class="nav-link active" href="#"><font color="yellow">${sessionScope.member.memberName}</font>님</a>
+						</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#">회원가입</a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/member/logout">로그아웃</a>
+						</li>
+					</c:when>
+					<c:when test="${!empty sessionId}">
+						<li class="nav-item" >
+							<a class="nav-link active" href="#"><font color="yellow">${sessionId}</font>님</a>
+						</li>
 
+						<li class="nav-item">
+							<a class="nav-link" href="/member/logout">로그아웃</a>
+						</li>
+					</c:when>
+					<c:otherwise>
+						<li class="nav-item" >
+							<a class="nav-link active" href="/login">로그인</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/member/rule">회원가입</a>
+						</li>
+					</c:otherwise>
+				</c:choose>
 				<li class="nav-item">
 					<a class="nav-link" href="#">장바구니</a>
 				</li>

@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +46,8 @@ public class Member {
     private YesNo smsAgree;
 
     private String memberMemo;
+
+    private LocalDateTime memberRegdate;
 
     @OneToMany(mappedBy = "boardMember")
     private List<Board> boards = new ArrayList<Board>();
