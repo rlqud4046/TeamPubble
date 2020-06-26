@@ -2,65 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 
-<script>
 
-    $(function() {
-
-        $("#modal01").click(function() {
-
-            var name = $("#name").val()
-            var email = $("#email").val()
-
-            if($("#name").val() != "" && $("#email").val() != "") { // 아이디와 이메일 이 공백이 아닐경우
-
-                $.ajax({
-
-                    type: "post",
-                    url: "/member/find/id/ok",
-                    data: {"name": name, "email": email},
-                    success: function (data) {
-                        if (data == 0) {
-
-                            var titleText = '<span  style="color: #000; "> 일치하는 회원 정보가 없습니다. </span>';
-
-                            $("#modalTitle").text("");
-                            $("#modalTitle").append(titleText);
-
-                            var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
-                            var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
-
-                            $("#btn01").text("");
-                            $("#btn02").text("");
-                            $("#btn01").append(btn1);
-                            $("#btn02").append(btn2);
-
-                        } else {
-                            location.href = '/member/find/id/o?id=' + data
-                        }
-                    }
-
-                }) // ajax end
-
-            }else { // 아이디 또는 이메일을 공백으로 입력했을 경우
-                var titleText = '<span  style="color: #000; "> 아이디와 이메일을 입력해주세요. </span>';
-
-                $("#modalTitle").text("");
-                $("#modalTitle").append(titleText);
-
-                var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
-                var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
-
-                $("#btn01").text("");
-                $("#btn02").text("");
-                $("#btn01").append(btn1);
-                $("#btn02").append(btn2);
-
-            }
-        })
-
-    })
-
-</script>
 
 <style>
 
@@ -217,3 +159,62 @@
 </div>
 
 <%@include file ="../include/footer.jsp" %>
+<script>
+
+    $(function() {
+
+        $("#modal01").click(function() {
+
+            var name = $("#name").val()
+            var email = $("#email").val()
+
+            if($("#name").val() != "" && $("#email").val() != "") { // 아이디와 이메일 이 공백이 아닐경우
+
+                $.ajax({
+
+                    type: "post",
+                    url: "/member/find/id/ok",
+                    data: {"name": name, "email": email},
+                    success: function (data) {
+                        if (data == 0) {
+
+                            var titleText = '<span  style="color: #000; "> 일치하는 회원 정보가 없습니다. </span>';
+
+                            $("#modalTitle").text("");
+                            $("#modalTitle").append(titleText);
+
+                            var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
+                            var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
+
+                            $("#btn01").text("");
+                            $("#btn02").text("");
+                            $("#btn01").append(btn1);
+                            $("#btn02").append(btn2);
+
+                        } else {
+                            location.href = '/member/find/id/o?id=' + data
+                        }
+                    }
+
+                }) // ajax end
+
+            }else { // 아이디 또는 이메일을 공백으로 입력했을 경우
+                var titleText = '<span  style="color: #000; "> 아이디와 이메일을 입력해주세요. </span>';
+
+                $("#modalTitle").text("");
+                $("#modalTitle").append(titleText);
+
+                var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
+                var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
+
+                $("#btn01").text("");
+                $("#btn02").text("");
+                $("#btn01").append(btn1);
+                $("#btn02").append(btn2);
+
+            }
+        })
+
+    })
+
+</script>

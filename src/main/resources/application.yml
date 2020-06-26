@@ -14,15 +14,23 @@ spring:
         # SQL문장이 한줄에 나오는 것이 아니라 줄바꿈되어 출력됨
         format_sql: true
         globally_quoted_identifiers: true
-
-  thymeleaf:
-    cache: false
-    #서버 재시작 안하고 쓸 수 있음.
-
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+
+  devtools:
+    livereload:
+      enabled: true
+
+  mail:
+    host: smtp.naver.com
+    port: 465
+    username: minwtest1
+    password: minwtest1!@
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
 
 logging.level:
   #JPA에서 발생하는 쿼리문을 로그파일로 보여주는 옵션

@@ -27,29 +27,22 @@ public class OptionList {
     )
     private Long id;
 
-    // private String optionType;
 
-    // private String optionDetail;
+    private String optionType;
 
-    @Column(nullable = false, precision = 12, scale = 1)
-    private BigDecimal optionPrice;
+    private String optionDetail;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "optionType")
-    private OptionList optionType;
 
-    @OneToMany(mappedBy = "optionType")
-    private List<OptionList> optionDetail = new ArrayList<OptionList>();
+    private int optionPrice;
 
 
 
-
-
-
-
-
-
-
+    @ManyToMany
+    @JoinTable(name = "item_option",
+            joinColumns = @JoinColumn(name="option_no"),
+            inverseJoinColumns = @JoinColumn(name="item_no")
+    )
+    private List<Item> items = new ArrayList<Item>();
 
 
 }

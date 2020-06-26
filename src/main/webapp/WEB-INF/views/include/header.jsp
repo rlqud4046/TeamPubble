@@ -14,6 +14,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
   </head>
@@ -26,40 +27,55 @@
 <!-- 여기부터 header -->
 		<header>
 			<nav class="navbar navbar-expand-md navbar-light navbar-fixed-top bg-warning">
-<!-- 작은 네비게이션 바(최상단) 우측정렬 필요 navbar-right로 함 -->
+				<!-- 작은 네비게이션 바(최상단) 우측정렬 필요 navbar-right로 함 -->
 				<ul class="nav navbar-nav navbar-right">
-					<c:if test="${empty sessionScope.member.memberId}">
+				<c:choose>
+					<c:when test="${!empty sessionScope.member.memberId}">
 						<li class="nav-item" >
-							<a class="nav-link active" href="/member/login">로그인</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/member/rule">회원가입</a>
+							<a class="nav-link active" href="#"><font color="yellow">${sessionScope.member.memberName}</font>님</a>
 						</li>
 
-					</c:if>
-					<c:if test="${!empty sessionScope.member.memberId}">
-						<li class="nav-item" >
-							<a class="nav-link active" href="/mypage" >
-								<font color="yellow">${sessionScope.member.memberName}</font>님</a>
-						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/member/logout">로그아웃</a>
 						</li>
-					</c:if>
+					</c:when>
+					<c:when test="${!empty sessionId}">
+						<li class="nav-item" >
+							<a class="nav-link active" href="#"><font color="yellow">${sessionId}</font>님</a>
+						</li>
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">장바구니</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/mypage?id=${sessionScope.member.memberId}">마이페이지</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">고객센터</a>
-					</li>
-				</ul>
-			</nav>
+						<li class="nav-item">
+							<a class="nav-link" href="/member/logout">로그아웃</a>
+						</li>
+					</c:when>
+					<c:otherwise>
+						<li class="nav-item" >
+							<a class="nav-link active" href="/login">로그인</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/member/rule">회원가입</a>
+						</li>
+					</c:otherwise>
+				</c:choose>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">장바구니</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">마이페이지</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">고객센터</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/member/list">관리자페이지</a>
+				</li>
+			</ul>
+            </nav>
 
 			<nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -69,24 +85,24 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">도서</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">포트폴리오</a> <a class="dropdown-item" href="#">독립출판</a> <a class="dropdown-item" href="#">앨범</a>
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown">도서</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+								<a class="dropdown-item" href="/items?no=1">포트폴리오</a> <a class="dropdown-item" href="/items?no=2">독립출판</a> <a class="dropdown-item" href="/items?no=3">앨범</a>
 							</div>
 						</li>
 						<li class="nav-item active">
-							 <a class="nav-link" href="#">학위논문 <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="/items?no=4">학위논문 <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">홍보물</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">팜플렛</a> <a class="dropdown-item" href="#">카탈로그</a>
+								<a class="dropdown-item" href="/items?no=5">팜플렛</a> <a class="dropdown-item" href="/items?no=6">카탈로그</a>
 								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">포스터</a>
+								</div> <a class="dropdown-item" href="/items?no=7">포스터</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							 <a class="nav-link" href="#">포토북</a>
+							<a class="nav-link" href="/items?no=8">포토북</a>
 						</li>
 					</ul>
 					<form class="form-inline">
@@ -98,6 +114,5 @@
 
 				</div>
 			</nav>
-			
+
 		</header>
-			

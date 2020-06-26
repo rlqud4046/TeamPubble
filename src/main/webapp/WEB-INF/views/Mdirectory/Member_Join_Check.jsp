@@ -2,80 +2,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 
-<script type="text/javascript">
-
-    $(function(){
-
-        $("#modal01").click(function(){   // 확인버튼 클릭시 이벤트 발생
-
-            var name = $("#name").val();
-            var email = $("#email").val();
-
-            if($("#name").val() != "" && $("#email").val() != ""){ // 아이디와 이메일 이 공백이 아닐경우
-
-            $.ajax({
-                type : "post",              // 데이터 전송 방식(GET,POST방식)
-                url  : "/member/check",       // 파일의 주소와 경로
-                data : {"name" : name, "email" : email},
-                // 통신이 성공한 경우 결과값을 data라는 변수에 저장
-                success  : function(data){
-
-                    if(data == 1){  // 아이디와 이메일이 일치하는 회원이 없는 경우
-                        var titleText = '<span  style="color: #000; "> 회원가입이 가능합니다.</span>';
-
-                        $("#modalTitle").text("");
-                        $("#modalTitle").append(titleText);
-
-                        var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
-                        var btn2 = '<button type="button" onclick=location.href="/member/join/form" class="deletebtn">회원가입하기</button>';
-
-                        $("#btn01").text("");
-                        $("#btn02").text("");
-                        $("#btn01").append(btn1);
-                        $("#btn02").append(btn2);
-                        return false;
-
-                    }else if(data == 0){ // 아이디와 이메일이 일치하는 회원이 있는 경우
-                        var titleText = '<span  style="color: #000; "> 가입안됨.</span>';
-                        $("#modalTitle").text("");
-                        $("#modalTitle").append(titleText);
-
-                        var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
-                        var btn2 = '<button type="button" onclick=location.href="#" class="deletebtn">비밀번호 재발급</button>';
-
-                        $("#btn01").text("");
-                        $("#btn02").text("");
-                        $("#btn01").append(btn1);
-                        $("#btn02").append(btn2);
-                        return false;
-                    }
-                },
-                error : function() { // 데이터 통신이 실패한 경우
-                    alert('data error');
-                }
-            }); // ajax end
-
-            } else { // 아이디 또는 이메일을 공백으로 입력했을 경우
-                var titleText = '<span  style="color: #000; "> 아이디와 이메일을 입력해주세요. </span>';
-
-                $("#modalTitle").text("");
-                $("#modalTitle").append(titleText);
-
-                var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
-                var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
-
-                $("#btn01").text("");
-                $("#btn02").text("");
-                $("#btn01").append(btn1);
-                $("#btn02").append(btn2);
-                return false;
-
-            }
-
-        });
-    });
-
-</script>
 
 <style>
 
@@ -231,3 +157,78 @@
 
 
 <%@include file ="../include/footer.jsp" %>
+
+<script type="text/javascript">
+
+    $(function(){
+
+        $("#modal01").click(function(){   // 확인버튼 클릭시 이벤트 발생
+
+            var name = $("#name").val();
+            var email = $("#email").val();
+
+            if($("#name").val() != "" && $("#email").val() != ""){ // 아이디와 이메일 이 공백이 아닐경우
+
+                $.ajax({
+                    type : "post",              // 데이터 전송 방식(GET,POST방식)
+                    url  : "/member/check",       // 파일의 주소와 경로
+                    data : {"name" : name, "email" : email},
+                    // 통신이 성공한 경우 결과값을 data라는 변수에 저장
+                    success  : function(data){
+
+                        if(data == 1){  // 아이디와 이메일이 일치하는 회원이 없는 경우
+                            var titleText = '<span  style="color: #000; "> 회원가입이 가능합니다.</span>';
+
+                            $("#modalTitle").text("");
+                            $("#modalTitle").append(titleText);
+
+                            var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
+                            var btn2 = '<button type="button" onclick=location.href="/member/join/form" class="deletebtn">회원가입하기</button>';
+
+                            $("#btn01").text("");
+                            $("#btn02").text("");
+                            $("#btn01").append(btn1);
+                            $("#btn02").append(btn2);
+                            return false;
+
+                        }else if(data == 0){ // 아이디와 이메일이 일치하는 회원이 있는 경우
+                            var titleText = '<span  style="color: #000; "> 가입안됨.</span>';
+                            $("#modalTitle").text("");
+                            $("#modalTitle").append(titleText);
+
+                            var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
+                            var btn2 = '<button type="button" onclick=location.href="#" class="deletebtn">비밀번호 재발급</button>';
+
+                            $("#btn01").text("");
+                            $("#btn02").text("");
+                            $("#btn01").append(btn1);
+                            $("#btn02").append(btn2);
+                            return false;
+                        }
+                    },
+                    error : function() { // 데이터 통신이 실패한 경우
+                        alert('data error');
+                    }
+                }); // ajax end
+
+            } else { // 아이디 또는 이메일을 공백으로 입력했을 경우
+                var titleText = '<span  style="color: #000; "> 아이디와 이메일을 입력해주세요. </span>';
+
+                $("#modalTitle").text("");
+                $("#modalTitle").append(titleText);
+
+                var btn1 = '<button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn">확인</button>';
+                var btn2 = '<button type="button" onclick=location.href="/" class="deletebtn">메인으로</button>';
+
+                $("#btn01").text("");
+                $("#btn02").text("");
+                $("#btn01").append(btn1);
+                $("#btn02").append(btn2);
+                return false;
+
+            }
+
+        });
+    });
+
+</script>

@@ -1,10 +1,9 @@
 package com.pubble.conpub.domain;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
         initialValue = 1000, //1000부터 일반회원
         allocationSize = 1
 )
-public class Member implements Serializable { //Serializable +
+public class Member implements Serializable {
 
     @Id
     @Column(name = "member_no")
@@ -47,7 +46,7 @@ public class Member implements Serializable { //Serializable +
 
     private String memberMemo;
 
-    private LocalDateTime memberRegdate; //200617 추가
+    private LocalDateTime memberRegdate;
 
     @OneToMany(mappedBy = "boardMember")
     private List<Board> boards = new ArrayList<Board>();
@@ -63,5 +62,22 @@ public class Member implements Serializable { //Serializable +
 
     @OneToMany(mappedBy = "selectOptionMember")
     private List<SelectedOption> selectedOptions = new ArrayList<SelectedOption>();
+
+    @OneToMany(mappedBy = "emailMember")
+    private List<Email> emails = new ArrayList<Email>();
+
+    @OneToMany(mappedBy = "smsMember")
+    private List<SMS> sms = new ArrayList<SMS>();
+
+
+
+
+
+
+
+    /*@Enumerated(EnumType.STRING)
+    private YesNo memberBlack;*/
+
+
 
 }

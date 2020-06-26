@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8"%>
-<%@include file ="include/header.jsp" %>
-		
-		<!-- section -->	
+<%@include file ="./include/header.jsp" %>
+
+		<!-- section -->
 			<div class="carousel slide" id="carousel-249579">
 				<ol class="carousel-indicators">
 					<li data-slide-to="0" data-target="#carousel-249579">
@@ -14,8 +14,8 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item">
-						<!-- 추가 -->
 						<a href=""><img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg"></a>
+						<img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg"">
 						<div class="carousel-caption">
 							<h4>
 								첫 번째 상품
@@ -94,9 +94,8 @@
 						<dd>
 							A description list is perfect for defining terms.
 						</dd>
-						
-						
+
 					</dl>
 				</div>
-			</div> 
-<%@include file ="include/footer.jsp" %>
+			</div>
+<%@include file ="./include/footer.jsp" %>
