@@ -15,6 +15,9 @@
 </div>
 
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+
 
   </body>
 </html>

@@ -63,7 +63,8 @@ public class SelectedOption {
     private int amount;
 
 
-    private int total_price;
+    private int price;
+    private int signature;
 
     private String ALIAS;
 

@@ -13,9 +13,18 @@
 
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
+
+<%--
+		데이터 테이블이 만들고 싶은데 ㅠ.ㅠ 이게아닌감
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" type="text/css"/>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"/>
+--%>
 	<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
-  </head>
+
+
+
+</head>
   <body>
 
     <div class="container-fluid">
@@ -37,9 +46,11 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">장바구니</a>
 				</li>
+
 				<li class="nav-item">
 					<a class="nav-link" href="/myPage/main">마이페이지</a>
 				</li>
+
 				<li class="nav-item">
 					<a class="nav-link" href="#">고객센터</a>
 				</li>
@@ -85,4 +96,3 @@
 			</nav>
 			
 		</header>
-			
