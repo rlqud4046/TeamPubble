@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-<!-- 주문내역 수정 필요 -->
+                    <!-- 주문내역 수정 필요 -->
                     <h3>
                         쇼핑정보
                     </h3>
@@ -78,7 +78,7 @@
                         <c:if test="${!empty list }">
                             <c:forEach items="${list }" var = "dto" >
                                 <tr class="notice">
-<!-- 수정 -->
+                                    <!-- 수정 -->
                                     <td class="text-center">${dto.getId() } </td>
                                     <td class="text-center">${dto.getMileagePath() }</td>
                                     <td class="text-center"> <fmt:formatNumber value="${dto.getMileage() }" type="number"/> </td>

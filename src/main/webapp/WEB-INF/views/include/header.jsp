@@ -41,7 +41,7 @@
 					</c:when>
 					<c:when test="${!empty sessionId}">
 						<li class="nav-item" >
-							<a class="nav-link active" href="#"><font color="yellow">${sessionId}</font>님</a>
+							<a class="nav-link active" href="/mypage"><font color="yellow">${sessionId}</font>님</a>
 						</li>
 
 						<li class="nav-item">
@@ -63,7 +63,7 @@
 					<a class="nav-link" href="#">장바구니</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">마이페이지</a>
+					<a class="nav-link" href="/mypage">마이페이지</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">고객센터</a>

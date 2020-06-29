@@ -302,6 +302,8 @@ public class MemberController {
         session.setAttribute("member", loginCheck);
 
         out.println(loginCheck.getMemberId());
+
+        //로그인시
     }
 
     @RequestMapping("/member/logout") // 로그아웃
@@ -381,36 +383,4 @@ public class MemberController {
 
     }
 
-    //메인페이지
-    @GetMapping("/index")
-    public String index(Model model) {
-        return "index";
-    }
-
-
-
-    @GetMapping("/cart")
-    public String cart(Model model) {
-        //필요한 처리
-
-        return "mypage/myCart";
-    }
-
-    @GetMapping("/updateInfo")
-    public String updateInfo(Model model) {
-        //필요한 처리
-
-        return "mypage/updateMyInfo";
-    }
-
-    @GetMapping("/unsubscribe")
-    public String unsubscribe(Model model) {
-        //필요한 처리
-
-        return "mypage/unsubscribe";
-    }
-
-    //중복일 경우 지울 것
-    @RequestMapping("/") // 메인화면
-    public String index(){ return "index"; }
 }

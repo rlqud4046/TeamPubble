@@ -78,7 +78,11 @@
                                     <td class="text-center">${dto.getId() } </td>
                                     <td class="text-center">${dto.getMileagePath() }</td>
                                     <td class="text-center"> <fmt:formatNumber value="${dto.getMileage() }" type="number"/> </td>
-                                    <td class="text-center">${dto.getMileageDate() } </td>
+                                    <td class="text-center">
+                                        <fmt:parseDate value="${dto.getMileageDate()}" pattern="yyyy-MM-dd'T'HH:mm"
+                                                       var="parseDateTime" type="both"/>
+                                        <fmt:formatDate value="${parseDateTime}" pattern="yyyy.MM.dd" var="date" />
+                                    </td>
                                 </tr>
                             </c:forEach>
                         </c:if>
