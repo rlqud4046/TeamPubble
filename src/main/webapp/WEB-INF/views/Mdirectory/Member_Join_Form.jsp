@@ -129,8 +129,8 @@
         </table>
 
         <div align="center">
-            <input type="submit" value="가입하기">
-            <input type="reset" value="취소">
+            <input class="btn btn-group" type="submit" value="가입하기">
+            <input class="btn btn-group" type="reset" value="취소">
         </div>
     </form>
 

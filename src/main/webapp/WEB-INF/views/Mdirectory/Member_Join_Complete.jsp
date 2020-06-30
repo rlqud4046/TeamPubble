@@ -21,8 +21,8 @@
     <p>CONPUB에 회원가입하신 것을 환영합니다.
         만족하실 수 있는 서비스를 위해 노력하겠습니다.</p>
 
-    <button onclick="location.href='/member/login'" style="background-color: #F2CB61">로그인</button>
-    <button onclick="location.href='/'">메인으로</button>
+    <button class="btn btn-group" onclick="location.href='/login'" style="background-color: #F2CB61">로그인</button>
+    <button class="btn btn-group" onclick="location.href='/'">메인으로</button>
 
 </div>
 

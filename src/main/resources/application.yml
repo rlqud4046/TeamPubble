@@ -6,7 +6,8 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
+
     properties:
       hibernate:
         # JPA에서 발생하는 쿼리문을 콘솔창에 출력해줌.
