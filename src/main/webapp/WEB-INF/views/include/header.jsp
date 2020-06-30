@@ -11,9 +11,11 @@
 
     <meta name="description" content="안녕하세요. 당신을 위한 콘펍입니다">
     <meta name="author" content="Pubble">
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -24,8 +26,9 @@
 		
 <!-- 여기부터 header -->
 		<header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-			<ul class="nav navbar-nav navbar-right">
+			<nav class="navbar navbar-expand-md navbar-light navbar-fixed-top bg-warning">
+				<!-- 작은 네비게이션 바(최상단) 우측정렬 필요 navbar-right로 함 -->
+				<ul class="nav navbar-nav navbar-right">
 				<c:choose>
 					<c:when test="${!empty sessionScope.member.memberId}">
 						<li class="nav-item" >
@@ -38,7 +41,7 @@
 					</c:when>
 					<c:when test="${!empty sessionId}">
 						<li class="nav-item" >
-							<a class="nav-link active" href="#"><font color="yellow">${sessionId}</font>님</a>
+							<a class="nav-link active" href="/mypage"><font color="yellow">${sessionId}</font>님</a>
 						</li>
 
 						<li class="nav-item">
@@ -60,7 +63,7 @@
 					<a class="nav-link" href="#">장바구니</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">마이페이지</a>
+					<a class="nav-link" href="/mypage">마이페이지</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">고객센터</a>
@@ -80,7 +83,10 @@
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
-				</button> <a class="navbar-brand" href="/">Conpub</a>
+				</button>
+				<a class="navbar-brand" href="/index">
+					<img src="https://ifh.cc/g/dveBaH.png" alt="Logo" style="width:170px;">
+				</a>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
@@ -106,7 +112,7 @@
 					</ul>
 					<form class="form-inline">
 						<input class="form-control mr-sm-2" type="text">
-						<button class="btn btn-primary my-2 my-sm-0" type="submit">
+						<button class="btn btn-warning my-2 my-sm-0 bg-warning" type="submit">
 							검색
 						</button>
 					</form>
