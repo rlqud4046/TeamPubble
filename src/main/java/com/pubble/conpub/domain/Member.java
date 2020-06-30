@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +15,10 @@ import java.util.List;
 @SequenceGenerator(
         name = "MEMBER_SEQ_GEN",
         sequenceName = "MEMBER_SEQ",
-        initialValue = 1,
+        initialValue = 1001, //1001부터 일반회원
         allocationSize = 1
 )
-public class Member {
+public class Member implements Serializable {
 
     @Id
     @Column(name = "member_no")
@@ -69,11 +70,6 @@ public class Member {
 
     @OneToMany(mappedBy = "smsMember")
     private List<SMS> sms = new ArrayList<SMS>();
-
-
-
-
-
 
 
     /*@Enumerated(EnumType.STRING)

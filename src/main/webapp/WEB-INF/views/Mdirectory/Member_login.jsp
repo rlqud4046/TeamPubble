@@ -52,10 +52,6 @@
     </div>
 </div>
 
-
-
-<%@include file ="../include/footer.jsp" %>
-
 <script>
 
     $(function () {
@@ -83,3 +79,7 @@
     })
 
 </script>
+
+
+
+<%@include file ="../include/footer.jsp" %>

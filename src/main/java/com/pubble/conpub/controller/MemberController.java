@@ -1,5 +1,6 @@
 package com.pubble.conpub.controller;
 
+
 import com.pubble.conpub.domain.Delivery;
 import com.pubble.conpub.domain.Email;
 import com.pubble.conpub.domain.Member;
@@ -14,7 +15,6 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -302,6 +302,8 @@ public class MemberController {
         session.setAttribute("member", loginCheck);
 
         out.println(loginCheck.getMemberId());
+
+        //로그인시
     }
 
     @RequestMapping("/member/logout") // 로그아웃
