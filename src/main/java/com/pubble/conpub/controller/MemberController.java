@@ -14,6 +14,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletResponse;
@@ -23,7 +24,9 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MemberController {
@@ -273,7 +276,7 @@ public class MemberController {
 
     @RequestMapping("/member/join") // 가입처리 과정
     public String memberJoin(Member member, @RequestParam("bun1") String bun1, @RequestParam("bun2") String bun2, @RequestParam("bun3") String bun3
-            , @RequestParam("Email1") String Email1, @RequestParam("Email2") String Email2, Model model) {
+            , @RequestParam("Email1") String Email1, @RequestParam("Email2") String Email2, RedirectAttributes rttr)throws Exception {
 
         member.setMemberPhone(bun1 + "-" + bun2 + "-" + bun3);
         member.setMemberEmail(Email1 + "@" + Email2);
@@ -281,7 +284,13 @@ public class MemberController {
 
         member = memberService.join(member);
 
-        model.addAttribute("Member", member);
+        rttr.addFlashAttribute("Member", member);
+
+        return "redirect:/member/join/complete";
+    }
+
+    @RequestMapping("/member/join/complete")
+    public String memberJoinComplete(){
 
         return "Mdirectory/Member_Join_Complete";
     }
@@ -301,7 +310,12 @@ public class MemberController {
 
         session.setAttribute("member", loginCheck);
 
-        out.println(loginCheck.getMemberId());
+        if(loginCheck != null){
+            out.println(loginCheck.getMemberId());
+        }else{
+            out.println(1);
+        }
+
     }
 
     @RequestMapping("/member/logout") // 로그아웃

@@ -15,7 +15,7 @@
     <br/>
     <br/>
 
-    <h3><font color="yellow">${member.getMemberName()}</font>님, 회원가입이 완료되었습니다.</h3>
+    <h3><font color="yellow">${Member.getMemberName()}</font>님, 회원가입이 완료되었습니다.</h3>
 
     <br/>
     <p>CONPUB에 회원가입하신 것을 환영합니다.
