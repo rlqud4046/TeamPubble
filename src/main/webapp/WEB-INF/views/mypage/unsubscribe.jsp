@@ -64,10 +64,8 @@
                         </li>
                     </ol>
 
-                    <button type="button" class="btn btn-secondary btn-md">
-                        회원탈퇴
-                    </button>
-                    <a id="modal-176564" href="#modal-container-176564" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+                    <a id="modal-176564" href="#modal-container-176564" role="button" class="btn btn-warning btn-md" data-toggle="modal">
+                        탈퇴하기</a>
 
                     <div class="modal fade" id="modal-container-176564" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -81,17 +79,16 @@
                                     </button>
                                 </div>
 
-<!-- 탈퇴 버튼 클릭시 띄울 확인창(modal 이용)-->
                                 <div class="modal-body">
                                     탈퇴한 후에는 회원정보 복구가 불가능합니다.
                                 </div>
                                 <div class="modal-footer">
 
-                                    <button type="button" class="btn btn-primary">
-                                        Save changes
+                                    <button type="button" class="btn btn-warning" onclick="location.href='/unsubscribe-check?id=${sessionScope.member.memberId}'">
+                                        확인
                                     </button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
+                                        취소
                                     </button>
                                 </div>
                             </div>

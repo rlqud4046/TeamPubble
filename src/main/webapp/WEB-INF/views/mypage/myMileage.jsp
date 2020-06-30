@@ -2,7 +2,6 @@
          pageEncoding="UTF-8"%>
 <%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime" %>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
       type="text/css"/>
 <%@include file ="../include/header.jsp" %>
@@ -77,11 +76,8 @@
                                 <tr class="notice">
                                     <td class="text-center">${dto.getId() } </td>
                                     <td class="text-center">${dto.getMileagePath() }</td>
-                                    <td class="text-center"> <fmt:formatNumber value="${dto.getMileage() }" type="number"/> </td>
-                                    <td class="text-center">
-                                        <fmt:parseDate value="${dto.getMileageDate()}" pattern="yyyy-MM-dd'T'HH:mm"
-                                                       var="parseDateTime" type="both"/>
-                                        <fmt:formatDate value="${parseDateTime}" pattern="yyyy.MM.dd" var="date" />
+                                    <td class="text-center"> ${dto.getMileage() } </td>
+                                    <td class="text-center"> ${dto.getMileageDate()}
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -89,7 +85,7 @@
                         <c:if test ="${empty mileageList }">
                             <tr>
                                 <td colspan="5" align="center">
-                                    <h3>서버 오류입니다. 새로고침하거나 고객센터에 문의하세요</h3>
+                                    <h3>해당 데이터가 없습니다. 새로고침하거나 고객센터에 문의하세요</h3>
                                 </td>
                             </tr>
                         </c:if>

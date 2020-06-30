@@ -24,7 +24,7 @@ public class MileageController {
     public String mileage(Model model, @RequestParam("id") String id) {
         List<Mileage> mileageList = mileageService.getMileageList(id);
         
-        //'마일리지 리스트'를 model을 이용해 뷰로 보냄
+        //마일리지 리스트를 model을 이용해 뷰로 보냄
         model.addAttribute("mileageList", mileageList);
 
         return "mypage/myMileage";

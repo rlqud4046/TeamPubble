@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@include file="../include/header.jsp" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
       type="text/css"/>
@@ -47,7 +47,8 @@
                         <button class="btn btn-warning" type="button" onclick="location.href='/cart'">
                             장바구니
                         </button>
-                        <button class="btn btn-warning" type="button" onclick="location.href='/mileage?id=${sessionScope.member.memberId}'">
+                        <button class="btn btn-warning" type="button"
+                                onclick="location.href='/mileage?id=${sessionScope.member.memberId}'">
                             마일리지
                         </button>
                         <button class="btn btn-warning" type="button" onclick="location.href='/updateInfo'">
@@ -81,7 +82,7 @@
                                     <!-- 수정 -->
                                     <td class="text-center">${dto.getId() } </td>
                                     <td class="text-center">${dto.getMileagePath() }</td>
-                                    <td class="text-center"> <fmt:formatNumber value="${dto.getMileage() }" type="number"/> </td>
+                                    <td class="text-center">${dto.getMileage() } </td>
                                     <td class="text-center">${dto.getMileageDate() } </td>
                                     <td class="text-center">${dto.getId() } </td>
                                     <td class="text-center"> 리뷰작성/리뷰확인 버튼 </td>
