@@ -3,7 +3,6 @@
          pageEncoding="UTF-8"%>
 
 
-
 <style>
 
     /* Set a style for all buttons */
