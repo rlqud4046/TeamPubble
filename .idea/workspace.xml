@@ -24,31 +24,19 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:upstream/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="2020-06-16_2">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/conpub.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/ItemsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/MyPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/item.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWriteForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/items/itemPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/mileage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myShoppingInfo.jsp" afterDir="false" />
+    <list default="true" id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="2020-06-29">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -57,37 +45,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020-06-15__12_39__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020-06-15_오후_12_39_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Mileage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Mileage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/OptionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/OptionList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/SelectedOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/SelectedOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/CartRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/ItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/ReviewRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/ItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/sist/jpashop/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Mileage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Mileage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OptionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OptionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/sql/item.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sql/item.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OrderService.java" afterDir="false" />
     </list>
     <list id="4e5348a5-e72a-4b7d-a736-571b4c6f759b" name="Revert &quot;initial commit&quot;" comment="Revert &quot;initial commit&quot;&#10;&#10;This reverts commit 8a7f0e2a" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +141,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -180,16 +150,18 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\include" />
-      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\js" />
-      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\css" />
-      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\images\reviewImages" />
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\images" />
       <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\views" />
       <recent name="C:\NCS\workspace(boot)\conpub\build\resources\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\images" />
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\views\include" />
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\webapp\WEB-INF\include" />
+      <recent name="C:\NCS\workspace(sinsu)\conpub\src\main\resources\static\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -205,7 +177,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\sist\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -227,7 +199,11 @@
       <workItem from="1592538149891" duration="14588000" />
       <workItem from="1592784953042" duration="6598000" />
       <workItem from="1592791582436" duration="28273000" />
-      <workItem from="1592870740771" duration="11166000" />
+      <workItem from="1592870740771" duration="32526000" />
+      <workItem from="1592964682755" duration="41713000" />
+      <workItem from="1593160248563" duration="17000" />
+      <workItem from="1593389495647" duration="11993000" />
+      <workItem from="1593476145863" duration="2175000" />
     </task>
     <task id="LOCAL-00001" summary="comm">
       <created>1591863399057</created>
@@ -313,7 +289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592267468566</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2020-06-23">
+      <created>1592882150476</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592882150476</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2020-06-29">
+      <created>1593409706991</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593409706991</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +350,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="upstream/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -408,7 +398,9 @@
     <MESSAGE value="2020.06.15-2" />
     <MESSAGE value="2020.06.15 Domains" />
     <MESSAGE value="Add domains, repositories and services &#10;&#10;It provides save functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add domains, repositories and services &#10;&#10;It provides save functions." />
+    <MESSAGE value="2020-06-23" />
+    <MESSAGE value="2020-06-29" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-06-29" />
   </component>
   <component name="WindowStateProjectService">
     <state x="857" y="409" key="#Assign_Data_Sources" timestamp="1591941971700">
@@ -423,18 +415,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1592463036997" />
-    <state x="457" y="353" key="#Template_Data_Languages" timestamp="1592872331116">
+    <state x="457" y="353" key="#Template_Data_Languages" timestamp="1593137166847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="457" y="353" key="#Template_Data_Languages/0.0.1920.1040@0.0.1920.1040" timestamp="1592872331116" />
+    <state x="457" y="353" key="#Template_Data_Languages/0.0.1920.1040@0.0.1920.1040" timestamp="1593137166847" />
     <state x="552" y="178" width="1115" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592533113466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" width="1115" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592533113466" />
-    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592443907527">
+    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593477931608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592443907527" />
+    <state x="725" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593477931608" />
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1591940298243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -455,14 +447,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1592533102492" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1592192265785">
+    <state x="184" y="86" width="1536" height="860" key="DiffContextDialog" timestamp="1593477935757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192265785" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592535357672">
+    <state x="184" y="86" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593477935757" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1593477243305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592535357672" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593477243305" />
     <state x="781" y="421" key="Github.CreateGistDialog" timestamp="1592873489275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -471,46 +463,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="386" key="Github.CreatePullRequestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592275372007" />
-    <state x="838" y="417" key="Github.ShareDialog" timestamp="1592210915330">
+    <state x="838" y="417" key="Github.ShareDialog" timestamp="1593476293354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592210915330" />
+    <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593476293354" />
     <state x="700" y="221" key="Github.UntrackedFilesDialog" timestamp="1591863010431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="221" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591863010431" />
-    <state width="1877" height="438" key="GridCell.Tab.0.bottom" timestamp="1592881915602">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1593409829399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.0.center" timestamp="1592881915602">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593409829399" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1593409829399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.0.left" timestamp="1592881915602">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593409829399" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1593409829399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.0.right" timestamp="1592881915602">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593409829399" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1593409829399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.1.bottom" timestamp="1592881915602">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593409829399" />
+    <state width="1877" height="308" key="GridCell.Tab.1.bottom" timestamp="1593409818742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.1.center" timestamp="1592881915602">
+    <state width="1877" height="308" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593409818742" />
+    <state width="1877" height="308" key="GridCell.Tab.1.center" timestamp="1593409818741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.1.left" timestamp="1592881915602">
+    <state width="1877" height="308" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593409818741" />
+    <state width="1877" height="308" key="GridCell.Tab.1.left" timestamp="1593409818741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
-    <state width="1877" height="438" key="GridCell.Tab.1.right" timestamp="1592881915602">
+    <state width="1877" height="308" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593409818741" />
+    <state width="1877" height="308" key="GridCell.Tab.1.right" timestamp="1593409818741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="438" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592881915602" />
+    <state width="1877" height="308" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593409818741" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1592445613564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -543,10 +535,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592791562894" />
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1591922270997">
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1593477935757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591922270997" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593477935757" />
+    <state width="508" height="448" key="SwitcherDM" timestamp="1592985055752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="508" height="448" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1592985055752" />
     <state x="707" y="207" key="VCS.ChangeListViewerDialog" timestamp="1592266837516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -555,10 +551,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="389" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591926480820" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592267512323">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1593476206817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592267512323" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593476206817" />
     <state x="684" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1592275391861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -579,26 +575,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592805494773" />
-    <state x="668" y="74" width="584" height="891" key="find.popup" timestamp="1592802699542">
+    <state x="765" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593477113547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="74" width="584" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592802699542" />
-    <state x="742" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592192392754">
+    <state x="765" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593477113547" />
+    <state x="668" y="74" width="584" height="891" key="find.popup" timestamp="1593142070128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="742" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192392754" />
-    <state x="758" y="307" key="git4idea.merge.GitMergeDialog" timestamp="1591927219682">
+    <state x="668" y="74" width="584" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593142070128" />
+    <state x="505" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1593477836536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="307" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591927219682" />
-    <state x="682" y="307" key="git4idea.merge.GitPullDialog" timestamp="1592192256182">
+    <state x="505" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593477836536" />
+    <state x="758" y="307" key="git4idea.merge.GitMergeDialog" timestamp="1593477158974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192256182" />
-    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592275805181">
+    <state x="758" y="307" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593477158974" />
+    <state x="682" y="307" key="git4idea.merge.GitPullDialog" timestamp="1593477686537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592275805181" />
+    <state x="682" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593477686537" />
+    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1593409759562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="419" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593409759562" />
     <state x="773" y="414" key="git4idea.ui.GitResetDialog" timestamp="1592268022234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -607,9 +607,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592552060237" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592880658792">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593409882826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592880658792" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593409882826" />
+    <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1593477255198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1593477255198" />
+    <state x="767" y="287" key="svn4idea.import.options" timestamp="1593477246794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="767" y="287" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1593477246794" />
   </component>
 </project>

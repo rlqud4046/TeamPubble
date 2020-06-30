@@ -21,17 +21,17 @@ public class OrdersController {
         return "orders/ordersForm";
     }
 
-    //상품페이지에서 '장바구니' 클릭시
+    /*//상품페이지에서 '장바구니' 클릭시
     @RequestMapping("/orders/cart")
     public String cart(SelectedOption selectedOption,Model model){
-        /*selectedOption테이블에 상태를 stored로 저장하기*/
+        *//*selectedOption테이블에 상태를 stored로 저장하기*//*
         orderService.addCart(selectedOption);
 
-        /*DB에서 상태가 stored인 데이터만 검색해서 데려오기*/
+        *//*DB에서 상태가 stored인 데이터만 검색해서 데려오기*//*
 
 
 
         return "orders/cartForm";
-    }
+    }*/
 
 }

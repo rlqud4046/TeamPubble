@@ -16,7 +16,7 @@ import java.util.List;
 @Repository
 public class OrderRepository{
 
-    @PersistenceContext
+   /* @PersistenceContext
     private EntityManager em;
 
     @PersistenceUnit
@@ -28,6 +28,6 @@ public class OrderRepository{
 
     public void cart(Member member, SelectedStatus selectedStatus){
         em.
-    }
+    }*/
 
 }
