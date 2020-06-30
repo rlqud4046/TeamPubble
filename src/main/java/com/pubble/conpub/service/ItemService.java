@@ -100,7 +100,7 @@ public class ItemService{
         try {
             System.out.println("트라이");
             return itemRepository.findAddCash(selectedSignaturePage).get(0).getOptionPrice();
-            
+
         }catch (Exception e){
             System.out.println("캐치");
             return 0;
@@ -124,6 +124,16 @@ public class ItemService{
     }
     public String findItemRec(Long no){
         return itemRepository.findCash(no).get(0).getItemRecommend();
+    }
+
+    // 전체 아이템 조회 메서드
+    public List<Item> findItems() {
+        return itemRepository.findAll();
+    }
+
+    // 특정 아이템 조회
+    public Item findOne(Long id){
+        return itemRepository.findOne(id);
     }
     public String findItemName(Long no){
         return itemRepository.findCash(no).get(0).getItemName();

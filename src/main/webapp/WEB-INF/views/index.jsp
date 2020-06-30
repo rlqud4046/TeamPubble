@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8"%>
-<%@include file ="./include/header.jsp" %>
+<%@include file ="./header.jsp" %>
 		
-		<!-- section -->
+		<!-- section -->	
 			<div class="carousel slide" id="carousel-249579">
 				<ol class="carousel-indicators">
 					<li data-slide-to="0" data-target="#carousel-249579">

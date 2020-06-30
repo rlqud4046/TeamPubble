@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +47,8 @@ public class Member {
 
     private String memberMemo;
 
+    private LocalDateTime memberRegdate;
+
     @OneToMany(mappedBy = "boardMember")
     private List<Board> boards = new ArrayList<Board>();
 
@@ -61,6 +64,20 @@ public class Member {
     @OneToMany(mappedBy = "selectOptionMember")
     private List<SelectedOption> selectedOptions = new ArrayList<SelectedOption>();
 
+    @OneToMany(mappedBy = "emailMember")
+    private List<Email> emails = new ArrayList<Email>();
+
+    @OneToMany(mappedBy = "smsMember")
+    private List<SMS> sms = new ArrayList<SMS>();
+
+
+
+
+
+
+
+    /*@Enumerated(EnumType.STRING)
+    private YesNo memberBlack;*/
 
 
 

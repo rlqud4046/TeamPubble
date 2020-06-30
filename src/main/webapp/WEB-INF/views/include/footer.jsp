@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-		 pageEncoding="UTF-8"%>
-
 		<!-- footer  -->
+		<%@ page language="java" contentType="text/html; charset=UTF-8"
+				 pageEncoding="UTF-8"%>
 		<footer style="text-align:center">	
 			<br/>
 			<address>
@@ -14,6 +13,7 @@
 	</div>
 </div>
 
+    <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
@@ -21,4 +21,3 @@
 
   </body>
 </html>
-

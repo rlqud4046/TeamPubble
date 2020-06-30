@@ -2,10 +2,10 @@ package com.pubble.conpub.repository;
 
 import com.pubble.conpub.domain.Item;
 import com.pubble.conpub.domain.OptionList;
+import com.pubble.conpub.domain.Member;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 import java.util.List;
 
 @Repository
@@ -50,4 +50,16 @@ public class ItemRepository {
     }
 
 
+
+
+    // 아이템 전체 검색
+    public List<Item> findAll() {
+        return em.createQuery("select i from Item i", Item.class).getResultList();
+    }
+
+
+    // 특정 회원 검색
+    public Item findOne(Long id) {
+        return em.find(Item.class, id);
+    }
 }

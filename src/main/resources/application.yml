@@ -23,6 +23,15 @@ spring:
     livereload:
       enabled: true
 
+  mail:
+    host: smtp.naver.com
+    port: 465
+    username: minwtest1
+    password: minwtest1!@
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
+
 
 logging.level:
   #JPA에서 발생하는 쿼리문을 로그파일로 보여주는 옵션

@@ -1,0 +1,46 @@
+Index: src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring:\r\n  datasource:\r\n    driver-class-name: org.h2.Driver\r\n    url: jdbc:h2:tcp://localhost/~/conpub\r\n    username: pubble\r\n    password:\r\n\r\n  jpa:\r\n    hibernate:\r\n      ddl-auto: none\r\n    properties:\r\n      hibernate:\r\n        # JPA���� �\u07FB��ϴ� �������� �ܼ�â�� �������.\r\n        show_sql : true\r\n        # SQL������ ���ٿ� ������ ���� �ƴ϶� ���ڰԳ���.\r\n\r\n        format_sql: true\r\n\r\n  thymeleaf:\r\n    cache: false\r\n    #���� ����� ���ϰ� �� �� ����.\r\n\r\nlogging.level:\r\n  #JPA���� �\u07FB��ϴ� �������� �α����Ϸ� �����ִ� �ɼ�\r\n  org.hibernate.SQL: debug\r\n\r\n  #SQL������ ���ε��Ǵ� �Ķ���� ������ �����ִ� �ɼ�\r\n  org.hibernate.type: trace\r\n\r\n\r\nserver:\r\n  port: 8585
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/application.yml	(revision af2b850422a9f52fcda743f9413d6b4fd279c18d)
++++ src/main/resources/application.yml	(date 1592189503291)
+@@ -7,24 +7,28 @@
+ 
+   jpa:
+     hibernate:
+-      ddl-auto: none
++      ddl-auto: create
++
+     properties:
+       hibernate:
+-        # JPA���� �߻��ϴ� �������� �ܼ�â�� �������.
+-        show_sql : true
+-        # SQL������ ���ٿ� ������ ���� �ƴ϶� ���ڰԳ���.
+-
++        # JPA에서 발생하는 쿼리문을 콘솔창에 출력해줌.
++        # show_sql : true
++        # SQL문장이 한줄에 나오는 것이 아니라 예쁘게나옴.
+         format_sql: true
++  devtools:
++    livereload:
++      enabled: true
++
+ 
+   thymeleaf:
+     cache: false
+-    #���� ����� ���ϰ� �� �� ����.
++    #서버 재시작 안하고 쓸 수 있음.
+ 
+ logging.level:
+-  #JPA���� �߻��ϴ� �������� �α����Ϸ� �����ִ� �ɼ�
++  #JPA에서 발생하는 쿼리문을 로그파일로 보여주는 옵션
+   org.hibernate.SQL: debug
+ 
+-  #SQL������ ���ε��Ǵ� �Ķ���� ������ �����ִ� �ɼ�
++  #SQL문에서 바인딩되는 파라미터 값까지 보여주는 옵션
+   org.hibernate.type: trace
+ 
+ 

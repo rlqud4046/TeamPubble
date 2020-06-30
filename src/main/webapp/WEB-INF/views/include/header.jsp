@@ -13,18 +13,9 @@
 
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
-
-<%--
-		데이터 테이블이 만들고 싶은데 ㅠ.ㅠ 이게아닌감
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" type="text/css"/>
-	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"/>
---%>
 	<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
-
-
-
-</head>
+  </head>
   <body>
 
     <div class="container-fluid">
@@ -35,24 +26,47 @@
 		<header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="nav-item" >
-					<a class="nav-link active" href="#">로그인</a>
-				</li>
+				<c:choose>
+					<c:when test="${!empty sessionScope.member.memberId}">
+						<li class="nav-item" >
+							<a class="nav-link active" href="#"><font color="yellow">${sessionScope.member.memberName}</font>님</a>
+						</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#">회원가입</a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/member/logout">로그아웃</a>
+						</li>
+					</c:when>
+					<c:when test="${!empty sessionId}">
+						<li class="nav-item" >
+							<a class="nav-link active" href="#"><font color="yellow">${sessionId}</font>님</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/member/logout">로그아웃</a>
+						</li>
+					</c:when>
+					<c:otherwise>
+						<li class="nav-item" >
+							<a class="nav-link active" href="/login">로그인</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/member/rule">회원가입</a>
+						</li>
+					</c:otherwise>
+				</c:choose>
 
 				<li class="nav-item">
 					<a class="nav-link" href="#">장바구니</a>
 				</li>
-
 				<li class="nav-item">
 					<a class="nav-link" href="/myPage/main">마이페이지</a>
 				</li>
-
 				<li class="nav-item">
 					<a class="nav-link" href="#">고객센터</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/member/list">관리자페이지</a>
 				</li>
 			</ul>
             </nav>
@@ -96,3 +110,4 @@
 			</nav>
 			
 		</header>
+			
