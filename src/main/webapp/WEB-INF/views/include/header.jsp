@@ -32,7 +32,7 @@
 				<c:choose>
 					<c:when test="${!empty sessionScope.member.memberId}">
 						<li class="nav-item" >
-							<a class="nav-link active" href="#"><font color="yellow">${sessionScope.member.memberName}</font>님</a>
+							<a class="nav-link active" href="/mypage"><font color="yellow">${sessionScope.member.memberName}</font>님</a>
 						</li>
 
 						<li class="nav-item">
@@ -66,7 +66,7 @@
 					<a class="nav-link" href="/mypage">마이페이지</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">고객센터</a>
+					<a class="nav-link" href="/client/page">고객센터</a>
 				</li>
 
 				<c:if test="${sessionScope.member.id < 101}">

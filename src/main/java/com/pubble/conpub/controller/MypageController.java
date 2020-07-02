@@ -74,4 +74,10 @@ public class MypageController {
         return "index";
     }
 
+    /*@GetMapping("/mypage")
+    public String mypage(Model model) {
+
+        return "mypage/myShoppingInfo";
+    }*/
+
 }
