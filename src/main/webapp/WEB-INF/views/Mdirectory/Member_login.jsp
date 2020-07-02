@@ -3,6 +3,12 @@
          pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<script>
+
+    var IMP = window.IMP; // 생략해도 괜찮습니다.
+    IMP.init("imp59762723"); // "imp00000000" 대신 발급받은 "가맹점 식별코드"를 사용합니다.
+
+</script>
 
 
 <div>
@@ -12,7 +18,7 @@
             <tr>
                 <td>아이디</td>
                 <td><input type="text" id="id"></td>
-                <td rowspan="2"><input id="log_btn" type="button" value="로그인"></td>
+                <td rowspan="2"><input id="log_btn" class="btn btn-group" type="button" value="로그인"></td>
             </tr>
             <tr>
                 <td>비밀번호</td>
@@ -40,14 +46,11 @@
             </c:choose>
         </center>
 
-
-        <input type="button" value="구글로긴 자리" style="background-color: #9fcdff">
-
         <hr width="50%" color="yellow"/>
 
-        <input type="button" value="회원가입" onclick="location.href='/member/rule'">
-        <input type="button" value="아이디 찾기" onclick="location.href='/member/find/id'">
-        <input type="button" value="비밀번호 찾기" onclick="location.href='/member/find/pwd'">
+        <input type="button" class="btn btn-group" value="회원가입" onclick="location.href='/member/rule'">
+        <input type="button" class="btn btn-group" value="아이디 찾기" onclick="location.href='/member/find/id'">
+        <input type="button" class="btn btn-group" value="비밀번호 찾기" onclick="location.href='/member/find/pwd'">
 
     </div>
 </div>
@@ -66,11 +69,14 @@
                 url : "/member/login/ok",
                 data : {"id" : id, "pwd" : pwd},
                 success : function (data) {
-                    if(data != ""){
+                    if(data != 1){
                         alert("로그인")
                         location.href='/'
-                    }else{
+                    }else if(data == 1){
                         alert("일치하는 아이디와 비밀번호가 없습니다.")
+                        $("#id").val("");
+                        $("#pwd").val("");
+                        $("#id").focus();
                     }
                 }
             }) ; // ajax end

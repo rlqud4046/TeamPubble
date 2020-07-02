@@ -2,12 +2,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 
-
-
-
-
-
-
 <h1>가입폼창</h1>
 
 <div class="container">
@@ -129,8 +123,8 @@
         </table>
 
         <div align="center">
-            <input type="submit" value="가입하기">
-            <input type="reset" value="취소">
+            <input class="btn btn-group" type="submit" value="가입하기">
+            <input class="btn btn-group" type="reset" value="취소">
         </div>
     </form>
 

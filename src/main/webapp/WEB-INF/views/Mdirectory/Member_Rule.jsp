@@ -251,8 +251,8 @@ Foreigner	Name, ID, Password, e-mail, Phone Number	Address
 
 <br/>
 
-<button id="rule_ok" class="btb btn-">가입하기</button>
-<button onclick="location.href = '/'">취소</button>
+<button id="rule_ok" class="btn btn-group">가입하기</button>
+<button onclick="location.href = '/'" class="btn btn-group">취소</button>
 
 </div>
 
