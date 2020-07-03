@@ -484,7 +484,7 @@
     <div class="container-fluid" style="width: 950px; border: 1px solid black">
         <div class="row">
         <div >
-            <div class="tabbable" id="member_tabs">
+            <div class="tabbable" >
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active show" href="#tab1" data-toggle="tab" id="into_tab1">상품정보</a>
@@ -662,6 +662,7 @@
     </div>
     </div>
 </div>
+
 
 
 

@@ -66,7 +66,7 @@ public class SelectedOption {
     private int price;
     private int signature;
 
-    private String ALIAS;
+    private String alias;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "selectedOptionList")

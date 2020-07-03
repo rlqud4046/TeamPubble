@@ -2,6 +2,7 @@ package com.pubble.conpub.service;
 
 import com.pubble.conpub.domain.Member;
 import com.pubble.conpub.repository.MemberRepository;
+import com.pubble.conpub.repository.MileageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -18,6 +19,8 @@ public class MemberService {
 
     @Autowired
     private MemberRepository memberRepository;
+    @Autowired
+    private MileageRepository mileageRepository;
     @Autowired
     private JavaMailSender mailSender;
 
@@ -167,5 +170,14 @@ public class MemberService {
     public List<Member> findMonth(){
         return memberRepository.findMonth();
     }
-
+    
+    /**
+     * 로그인한 유저의 id를 받아 해당 유저의 멤버 객체를 삭제하는 함수
+     * @param userId
+     * @return void
+     */
+    public void deleteMember(String userId) {
+        Member pickMember = mileageRepository.findMemberId(userId);
+        memberRepository.deleteMember(pickMember.getId());
+    }
 }

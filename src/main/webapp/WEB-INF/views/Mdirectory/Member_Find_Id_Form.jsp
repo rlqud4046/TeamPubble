@@ -125,11 +125,11 @@
         <table>
             <tr>
                 <td>이름</td>
-                <td><input type="text" id="name"></td>
+                <td><input class="btn btn-group" type="text" id="name"></td>
             </tr>
             <tr>
                 <td>이메일</td>
-                <td><input type="text" id="email"></td>
+                <td><input class="btn btn-group" type="text" id="email"></td>
             </tr>
         </table>
 
