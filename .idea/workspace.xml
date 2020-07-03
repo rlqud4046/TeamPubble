@@ -6,99 +6,72 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="Add OrderController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/MileageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/item.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/item_option.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/mileage.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/option_list.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/c001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/c002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/c003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/conpub-logo-e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Find_Id_Complete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Find_Id_Form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Find_Pwd_Form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Join_Check.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Join_Complete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Join_Form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_Rule.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Mdirectory/Member_login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/myCart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/myMileage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/myShoppingInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/mypageGroupHeader.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/orderReview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/unsubscribe.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypage/updateMyInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productPortfolio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020-06-15__12_39__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020-06-15_오후_12_39_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/domain/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/CartRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/MemberRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/MileageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/MileageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/repository/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/MileageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/pubble/conpub/service/MileageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/sist/jpashop/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MileageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MileageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MileageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MileageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="78c16a36-6d5d-426f-953a-527fcec3035d" name="Default Changelist" comment="Add domains, repositories and services &#10;&#10;It provides save functions." />
+    <list id="4e5348a5-e72a-4b7d-a736-571b4c6f759b" name="Revert &quot;initial commit&quot;" comment="Revert &quot;initial commit&quot;&#10;&#10;This reverts commit 8a7f0e2a">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/ConpubApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Delivery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Faq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Mileage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OptionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/OrderStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Reply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SelectedStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/SiteImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/domain/YesNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/BoardRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/CartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/DeliveryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/FaqRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/MileageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OptionListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ReplyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/SelectedOptionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/repository/SiteImageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/DeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/FaqService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/MileageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OptionListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ReplyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/SelectedOptionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pubble/conpub/service/SiteImageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pubble/conpub/ConpubApplicationTests.java" beforeDir="false" />
     </list>
-    <list id="4e5348a5-e72a-4b7d-a736-571b4c6f759b" name="Revert &quot;initial commit&quot;" comment="Revert &quot;initial commit&quot;&#10;&#10;This reverts commit 8a7f0e2a" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +127,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,7 +147,6 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -346,7 +318,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/develop" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -425,11 +397,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="550" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592268991945" />
-    <state x="238" y="139" width="1484" height="892" key="DiffContextDialog" timestamp="1593151873161">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1592192265785">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592192265785" />
-    <state x="238" y="139" width="1484" height="892" key="DiffContextDialog/64.0.1856.1080@64.0.1856.1080" timestamp="1593151873161" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592268362137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -446,46 +417,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="221" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591863010431" />
-    <state width="1376" height="288" key="GridCell.Tab.0.bottom" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.0.bottom/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.0.center" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.0.center/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.0.left" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.0.left/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.0.right" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.0.right/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.1.bottom" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.1.bottom/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.1.center" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.1.center/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.1.left" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.1.left/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
-    <state width="1376" height="288" key="GridCell.Tab.1.right" timestamp="1593151370669">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1592210462011">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592210462011" />
-    <state width="1376" height="288" key="GridCell.Tab.1.right/64.0.1856.1080@64.0.1856.1080" timestamp="1593151370669" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1592198991905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -534,15 +497,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592267512323" />
-    <state x="274" y="191" width="1375" height="887" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593150480346">
-      <screen x="64" y="0" width="1856" height="1080" />
-    </state>
-    <state x="274" y="191" width="1375" height="887" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/64.0.1856.1080@64.0.1856.1080" timestamp="1593150480346" />
-    <state x="153" y="96" width="1679" height="889" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593150174850">
-      <screen x="64" y="0" width="1856" height="1080" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592268363849">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592268363849" />
-    <state x="153" y="96" width="1679" height="889" key="com.intellij.history.integration.ui.views.FileHistoryDialog/64.0.1856.1080@64.0.1856.1080" timestamp="1593150174850" />
     <state x="668" y="74" width="584" height="891" key="find.popup" timestamp="1592266926620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

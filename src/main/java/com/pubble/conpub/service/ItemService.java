@@ -7,6 +7,7 @@ import com.pubble.conpub.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,7 +96,34 @@ public class ItemService{
     }
 
     public int signature(String selectedSignaturePage) {
-         return itemRepository.findAddCash(selectedSignaturePage).get(0).getOptionPrice();
+
+        try {
+            System.out.println("트라이");
+            return itemRepository.findAddCash(selectedSignaturePage).get(0).getOptionPrice();
+
+        }catch (Exception e){
+            System.out.println("캐치");
+            return 0;
+        }
+    }
+
+    public String findItemImage1(Long no){
+        return itemRepository.findCash(no).get(0).getItemImage1();
+    }
+    public String findItemImage2(Long no){
+        return itemRepository.findCash(no).get(0).getItemImage2();
+    }
+    public String findItemImage3(Long no){
+        return itemRepository.findCash(no).get(0).getItemImage3();
+    }
+    public String findItemDelivery(Long no){
+        return itemRepository.findCash(no).get(0).getItemDelivery();
+    }
+    public String findItemInfo(Long no){
+        return itemRepository.findCash(no).get(0).getItemInfo();
+    }
+    public String findItemRec(Long no){
+        return itemRepository.findCash(no).get(0).getItemRecommend();
     }
 
     // 전체 아이템 조회 메서드
@@ -107,4 +135,15 @@ public class ItemService{
     public Item findOne(Long id){
         return itemRepository.findOne(id);
     }
+    public String findItemName(Long no){
+        return itemRepository.findCash(no).get(0).getItemName();
+    }
+
+
+
+
+
+
+
+
 }

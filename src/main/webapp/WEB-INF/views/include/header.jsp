@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@
     <meta name="description" content="안녕하세요. 당신을 위한 콘펍입니다">
     <meta name="author" content="Pubble">
 
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<%--<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>--%>
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -60,10 +60,12 @@
 				</c:choose>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">장바구니</a>
+					<a class="nav-link" href="/order/cartMain?member_no=${sessionScope.member.id}">장바구니</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/mypage">마이페이지</a>
+
+					<a class="nav-link" href="/mypage?id=${sessionScope.member.id}">마이페이지</a>
+
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/client/page">고객센터</a>
@@ -80,13 +82,15 @@
             </nav>
 
 			<nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-
+				 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
+
 				</button>
 				<a class="navbar-brand" href="/index">
 					<img src="https://ifh.cc/g/dveBaH.png" alt="Logo" style="width:170px;">
 				</a>
+
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
@@ -96,7 +100,7 @@
 							</div>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="/items?no=4">학위논문 <span class="sr-only">(current)</span></a>
+							 <a class="nav-link" href="/items?no=4">학위논문 <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">홍보물</a>
@@ -107,10 +111,11 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/items?no=8">포토북</a>
+							 <a class="nav-link" href="/items?no=8">포토북</a>
 						</li>
 					</ul>
 					<form class="form-inline">
+
 						<input class="form-control mr-sm-2" type="text">
 						<button class="btn btn-warning my-2 my-sm-0 bg-warning" type="submit">
 							검색
@@ -120,4 +125,6 @@
 				</div>
 			</nav>
 
+
 		</header>
+

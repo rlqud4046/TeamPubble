@@ -1,5 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+pageEncoding="UTF-8"%>
+<%@include file ="../include/header.jsp" %>
+
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
+
+<%--<style type="text/css">
+    .container {
+        overflow: hidden;
+    }
+    .nav {
+        float: left;
+        width: 150px;
+        background: #333;
+        color: #fff;
+        margin-right: 50px;
+    }
+    .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .nav-item {
+        margin: 4px 0;
+    }
+    .nav-link {
+        display: block;
+        text-decoration: none;
+        padding: 4px 10px;
+        color: #fff;
+    }
+    .nav-link:hover {
+        background: #5457de;
+    }
+    .content {
+        float: left;
+        width: 600px;
+    }
+</style>--%>
 <%@include file="../include/header.jsp" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
@@ -33,7 +71,6 @@
         });
     });
 </script>
-
 <!-- section -->
 <div class="container-fluid">
     <div class="row">
@@ -128,4 +165,5 @@
         </div>
     </div>
 </div>
+
 <%@include file="../include/footer.jsp" %>

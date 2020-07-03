@@ -1,21 +1,19 @@
 package com.pubble.conpub.controller;
 
-import com.pubble.conpub.domain.OptionList;
+import com.pubble.conpub.domain.Review;
 import com.pubble.conpub.service.ItemService;
+import com.pubble.conpub.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.jws.WebParam;
+import javax.naming.Name;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.math.BigDecimal;
 import java.util.List;
 
 @Controller
@@ -23,14 +21,31 @@ public class ItemsController {
 
     @Autowired
     private ItemService itemService;
+    @Autowired
+    private ReviewService reviewService;
 
     @GetMapping("/items")
     private String itemPage(Model model,@RequestParam("no") Long page_no){
 
 
-
+        //page_no와 그에 해당하는 상품명,상품사진 보내주기
         model.addAttribute("no",page_no);
+        model.addAttribute("itemName",itemService.findItemName(page_no));
+        model.addAttribute("itemImage1",itemService.findItemImage1(page_no));
+        model.addAttribute("itemImage2",itemService.findItemImage2(page_no));
+        model.addAttribute("itemImage3",itemService.findItemImage3(page_no));
+        model.addAttribute("itemInfo",itemService.findItemInfo(page_no));
+        model.addAttribute("itemDelivery",itemService.findItemDelivery(page_no));
+        model.addAttribute("itemRec",itemService.findItemRec(page_no));
 
+        //page_no에 해당하는 리뷰 가져오기
+        List<Review> listReview = reviewService.FindReviewList(page_no);
+        model.addAttribute("review", listReview);
+        //해당리뷰 작성자 아이디 가져오기
+
+
+
+        //select에 해당하는 option값 보내주기
         List<String> listS =itemService.OptionDetail(page_no,"size%");
         model.addAttribute("SizeList",listS);
 
@@ -73,42 +88,45 @@ public class ItemsController {
         return "/items/itemPage";
     }
 
-        @RequestMapping("/sum")
+    //상품페이지에서 모든 옵션 선택시 단가 계산
+    @RequestMapping("/sum")
     private void sumCash(Model model, @RequestParam(value = "selectedPage", required = false) String selectedPage, @RequestParam(value = "selectedTextColor", required = false) String selectedTextColor,
                         @RequestParam(value = "selectedTextBothSides", required = false) String selectedTextBothSides, @RequestParam(value = "selectedCoverCoating", required = false) String selectedCoverCoating,
                         @RequestParam(value = "selectedCoverSide", required = false) String selectedCoverSide, @RequestParam(value = "selectedCoverColor", required = false) String selectedCoverColor,
-                        @RequestParam(value = "selectedAnnalsCoverColor", required = false) String selectedAnnalsCoverColor,
+                        @RequestParam(value = "selectedAnnalsCoverColor", required = false) String selectedAnnalsCoverColor, @RequestParam(value = "selectedAmount", required = false) String selectedAmount,
                         @RequestParam(value = "selectedCoverType", required = false) String selectedCoverType, @RequestParam(value = "selectedHardGold", required = false) String selectedHardGold,
                         @RequestParam(value = "selectedSize", required = false) String selectedSize, @RequestParam(value = "no", required = false) Long no,
-                        @RequestParam(value = "selectedSignaturePage", required = false) String selectedSignaturePage, @RequestParam(value = "selectedBinding", required = false) String selectedBinding,
+                        @RequestParam(value = "selectedBinding", required = false) String selectedBinding,
                         @RequestParam(value = "selectedBindingDirection", required = false) String selectedBindingDirection, @RequestParam(value = "selectedPaper", required = false) String selectedPaper,
                         HttpServletResponse response) throws IOException {
 
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        System.out.println("신순신수니수니수니수니쉬누시누시ㅜㅅ니쉬눗니ㅜ시누시뉘");
-        System.out.println("================ > " + no);
-        System.out.println("================ > " + selectedSize);
-        System.out.println("================ > " + selectedBindingDirection);
-        System.out.println("================ > " + selectedTextColor);
-
-        int sum = 0;
+        int sum = 50;
 
 
         int add = itemService.cash(no, selectedTextColor, selectedTextBothSides, selectedCoverCoating, selectedCoverSide,
                 selectedCoverColor, selectedAnnalsCoverColor, selectedCoverType, selectedHardGold,
                 selectedSize, selectedBinding, selectedBindingDirection, selectedPaper);
 
-        if(selectedSignaturePage!=null) {
-            int signaturePage = itemService.signature(selectedSignaturePage);
-            out.println(sum + (add *  + signaturePage));
-        }else {
 
+        try {
+            out.println((sum + add)* (Integer.parseInt(selectedPage))*Integer.parseInt(selectedAmount));
+        }catch (Exception e){
+            out.println((sum +add )*Integer.parseInt(selectedAmount));
 
-        out.println(sum + (add * Integer.parseInt(selectedPage)));
         }
 
     }
+
+    @RequestMapping("/signature")
+    private void sumcash(@RequestParam("signaturePage") String sp,HttpServletResponse response) throws IOException {
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+
+        out.println(itemService.signature(sp));
+    }
+
 }
 
